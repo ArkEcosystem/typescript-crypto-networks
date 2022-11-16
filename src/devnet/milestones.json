@@ -76,7 +76,7 @@
     {
         "height": 3963000,
         "p2p": {
-            "minimumVersions": [">=2.6 || >=2.6.0-next.0"]
+            "minimumVersions": [">=2.6 || >=2.6.0-next.0 || >=3.6.1-rc.0"]
         }
     },
     {
@@ -84,7 +84,7 @@
         "aip11": true,
         "htlcEnabled": true,
         "p2p": {
-            "minimumVersions": [">=2.6 || >=2.6.0-next.9"]
+            "minimumVersions": [">=2.6 || >=2.6.0-next.9 || >=3.6.1-rc.0"]
         }
     },
     {
@@ -95,7 +95,7 @@
         "height": 5640857,
         "aip37": true,
         "p2p": {
-            "minimumVersions": [">=3.0 || >=3.0.0-next.0"]
+            "minimumVersions": [">=3.0 || >=3.0.0-next.0 || >=3.6.1-rc.0"]
         }
     }
 ]
