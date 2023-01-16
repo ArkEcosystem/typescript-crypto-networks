@@ -10,6 +10,7 @@
     "wif": 170,
     "slip44": 111,
     "aip20": 0,
+    "burnAddress": "ARKmainnetBURNARKmainnetBURNboXeHs",
     "client": {
         "token": "ARK",
         "symbol": "Ѧ",
