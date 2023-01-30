@@ -10,6 +10,7 @@
     "wif": 186,
     "slip44": 1,
     "aip20": 0,
+    "burnAddress": "ARKtestnetBURNARKtestnetBURNc37N4A",
     "client": {
         "token": "TARK",
         "symbol": "TѦ",
