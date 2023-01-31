@@ -26,7 +26,8 @@
             }
         },
         "vendorFieldLength": 64,
-        "multiPaymentLimit": 256
+        "multiPaymentLimit": 256,
+        "blockBurnAddress": true
     },
     {
         "height": 2,

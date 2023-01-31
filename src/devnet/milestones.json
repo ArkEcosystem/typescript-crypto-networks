@@ -94,5 +94,9 @@
         "p2p": {
             "minimumVersions": [">=3.0"]
         }
+    },
+    {
+        "height": 13849600,
+        "blockBurnAddress": true
     }
 ]
