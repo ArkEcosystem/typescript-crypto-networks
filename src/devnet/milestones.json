@@ -98,5 +98,9 @@
     {
         "height": 13845900,
         "blockBurnAddress": true
+    },
+    {
+        "height": 21400000,
+        "blsPublicKeyRegistrationEnabled": true
     }
 ]
