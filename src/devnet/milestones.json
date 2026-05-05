@@ -29,7 +29,8 @@
         "ignoreInvalidSecondSignatureField": true,
         "ignoreExpiredTransactions": true,
         "vendorFieldLength": 64,
-        "multiPaymentLimit": 128
+        "multiPaymentLimit": 128,
+        "multiSignatureRegistrationEnabled": true
     },
     {
         "height": 10800,
@@ -102,5 +103,9 @@
     {
         "height": 21400000,
         "blsPublicKeyRegistrationEnabled": true
+    },
+    {
+        "height": 24367000,
+        "multiSignatureRegistrationEnabled": false
     }
 ]
