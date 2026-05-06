@@ -74,5 +74,9 @@
         "p2p": {
             "minimumVersions": [">=3.5.0"]
         }
+    },
+    {
+        "height": 35765000,
+        "multiSignatureRegistrationEnabled": false
     }
 ]
