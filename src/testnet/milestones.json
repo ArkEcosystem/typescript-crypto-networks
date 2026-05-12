@@ -28,7 +28,9 @@
         "vendorFieldLength": 64,
         "multiPaymentLimit": 256,
         "blockBurnAddress": true,
-        "multiSignatureRegistrationEnabled": true
+        "multiSignatureRegistrationEnabled": true,
+        "multiSignatureSendingEnabled": true,
+        "multiSignatureReceivingEnabled": true
     },
     {
         "height": 2,
