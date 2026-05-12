@@ -30,7 +30,9 @@
         "ignoreExpiredTransactions": true,
         "vendorFieldLength": 64,
         "multiPaymentLimit": 128,
-        "multiSignatureRegistrationEnabled": true
+        "multiSignatureRegistrationEnabled": true,
+        "multiSignatureSendingEnabled": true,
+        "multiSignatureReceivingEnabled": true
     },
     {
         "height": 10800,
@@ -107,5 +109,10 @@
     {
         "height": 24367000,
         "multiSignatureRegistrationEnabled": false
+    },
+    {
+        "height": 24432000,
+        "multiSignatureSendingEnabled": false,
+        "multiSignatureReceivingEnabled": false
     }
 ]
