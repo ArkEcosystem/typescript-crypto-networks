@@ -28,7 +28,9 @@
         },
         "vendorFieldLength": 64,
         "multiPaymentLimit": 64,
-        "multiSignatureRegistrationEnabled": true
+        "multiSignatureRegistrationEnabled": true,
+        "multiSignatureSendingEnabled": true,
+        "multiSignatureReceivingEnabled": true
     },
     {
         "height": 75600,
@@ -78,5 +80,13 @@
     {
         "height": 35765000,
         "multiSignatureRegistrationEnabled": false
+    },
+        {
+        "height": 35872000,
+        "multiSignatureSendingEnabled": false,
+        "multiSignatureReceivingEnabled": false,
+        "p2p": {
+            "minimumVersions": [">=3.9"]
+        }
     }
 ]
