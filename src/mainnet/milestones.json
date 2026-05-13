@@ -84,6 +84,9 @@
         {
         "height": 35872000,
         "multiSignatureSendingEnabled": false,
-        "multiSignatureReceivingEnabled": false
+        "multiSignatureReceivingEnabled": false,
+        "p2p": {
+            "minimumVersions": [">=3.9"]
+        }
     }
 ]
