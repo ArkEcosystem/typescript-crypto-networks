@@ -78,5 +78,10 @@
     {
         "height": 35765000,
         "multiSignatureRegistrationEnabled": false
+    },
+        {
+        "height": 35872000,
+        "multiSignatureSendingEnabled": false,
+        "multiSignatureReceivingEnabled": false
     }
 ]
