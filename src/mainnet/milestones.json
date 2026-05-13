@@ -28,7 +28,9 @@
         },
         "vendorFieldLength": 64,
         "multiPaymentLimit": 64,
-        "multiSignatureRegistrationEnabled": true
+        "multiSignatureRegistrationEnabled": true,
+        "multiSignatureSendingEnabled": true,
+        "multiSignatureReceivingEnabled": true
     },
     {
         "height": 75600,
