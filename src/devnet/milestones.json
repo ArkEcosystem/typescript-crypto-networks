@@ -85,6 +85,7 @@
     {
         "height": 4006000,
         "aip11": true,
+        "magistrateEnabled": true,
         "htlcEnabled": true
     },
     {
