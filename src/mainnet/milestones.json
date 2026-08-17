@@ -61,7 +61,8 @@
     },
     {
         "height": 11273000,
-        "aip11": true
+        "aip11": true,
+        "magistrateEnabled": true
     },
     {
         "height": 13705000,
