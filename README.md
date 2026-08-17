@@ -38,6 +38,20 @@ npm run format # apply formatting
 
 Network configuration lives in [src/](src/) as plain JSON; each network's `index.ts` only re-exports it.
 
+## Releasing
+
+Publishing is automated by [.github/workflows/publish.yml](.github/workflows/publish.yml), which runs
+when a commit whose message starts with `release:` lands on `master`:
+
+```bash
+npm version 2.0.0 --no-git-tag-version   # updates package.json and package-lock.json
+git commit -am "release: 2.0.0"
+git push origin master
+```
+
+The workflow builds and runs `npm publish --access public`, using the `NPM_TOKEN` repository secret.
+Every release publishes to the `latest` dist-tag.
+
 ## Security
 
 If you discover a security vulnerability within this package, please send an e-mail to security@ark.io. All security vulnerabilities will be promptly addressed.
