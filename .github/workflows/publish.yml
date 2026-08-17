@@ -1,17 +1,17 @@
-name: CI
+name: Publish
 
 on:
     push:
         branches:
             - "master"
-    pull_request:
-        types: [ready_for_review, synchronize, opened]
 
 permissions:
     contents: read
 
 jobs:
-    build:
+    publish:
+        if: startsWith(github.event.head_commit.message, 'release:')
+
         runs-on: ubuntu-latest
 
         steps:
@@ -21,12 +21,15 @@ jobs:
               with:
                   node-version-file: ".nvmrc"
                   cache: "npm"
+                  registry-url: "https://registry.npmjs.org/"
 
             - name: Install
               run: npm ci
 
-            - name: Lint
-              run: npm run lint
-
             - name: Build
               run: npm run build
+
+            - name: Publish to NPM
+              run: npm publish --access public
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
