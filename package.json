@@ -16,11 +16,11 @@
         "node": ">=24"
     },
     "scripts": {
-        "build": "npm run clean && tsc",
+        "build": "pnpm run clean && tsc",
         "clean": "node -e \"require('node:fs').rmSync('dist', { force: true, recursive: true })\"",
         "format": "prettier --write .",
         "lint": "prettier --check .",
-        "prepublishOnly": "npm run build"
+        "prepublishOnly": "pnpm run build"
     },
     "devDependencies": {
         "prettier": "^3.9.6",
