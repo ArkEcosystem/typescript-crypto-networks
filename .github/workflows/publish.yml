@@ -1,35 +1,33 @@
-name: Publish
+name: Publish Package
 
 on:
+    workflow_dispatch:
     push:
-        branches:
-            - "master"
+        branches: [master]
 
 permissions:
+    id-token: write # OIDC for npm trusted publishing
     contents: read
 
 jobs:
     publish:
-        if: startsWith(github.event.head_commit.message, 'release:')
-
+        # Only run when the commit message starts with 'release:' (or manually dispatched).
+        if: startsWith(github.event.head_commit.message, 'release:') || github.event_name == 'workflow_dispatch'
         runs-on: ubuntu-latest
-
         steps:
             - uses: actions/checkout@v7
+
+            - uses: pnpm/action-setup@v6
 
             - uses: actions/setup-node@v7
               with:
                   node-version-file: ".nvmrc"
-                  cache: "npm"
                   registry-url: "https://registry.npmjs.org/"
+                  cache: pnpm
 
-            - name: Install
-              run: npm ci
+            # npm 11.5.1+ is required for trusted publishing
+            - run: npm install -g npm@11
 
-            - name: Build
-              run: npm run build
-
-            - name: Publish to NPM
-              run: npm publish --access public
-              env:
-                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+            - run: pnpm install --frozen-lockfile
+            - run: pnpm build
+            - run: pnpm publish --access=public --no-git-checks
