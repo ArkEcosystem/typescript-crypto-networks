@@ -8,8 +8,6 @@
 
 ## Installation
 
-Requires [Node.js](https://nodejs.org) 24 or later.
-
 ```bash
 npm install @arkecosystem/crypto-networks
 ```
