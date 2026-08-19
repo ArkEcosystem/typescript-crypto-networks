@@ -89,5 +89,9 @@
         "p2p": {
             "minimumVersions": [">=3.9"]
         }
+    },
+    {
+        "height": 36937100,
+        "magistrateEnabled": false
     }
 ]
